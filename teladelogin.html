@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <style>
+        body{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            background-color: white;
+            color: black;
+        } 
+        fieldset{
+            border: 3px solid #fe0000;
+            padding: 50px;
+            border-radius: 15;
+        }
+        div{
+            background-color:  #009046;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            padding:80px ; 
+            border-radius: 50px;
+            color: white;
+            }
+            input{
+                padding: 15px;
+                border:none;
+                outline: none;
+                font-size: 16px;
+               
+            }
+           
+            button{
+                background-color: #f3c53c;
+                border: none;
+                padding: 15px;
+                width: 100%;
+                border-radius: 5px;
+                color: black;
+                font-size: 25px;
+
+            }
+            button:hover{
+                background-color: #f3e2af;
+                cursor: pointer;
+
+            }
+            #valores{
+                font-size: 20px;
+            }
+            #cadastre_se{
+                font-size: 20px;
+                color: #f3c53c;
+            }
+            #cadastre_se:hover{
+                color:#f3e2af ;
+            }
+    </style>
+</head>
+<body>
+    <div>
+        <form method="POST" action="acaologin.php" >
+        <fieldset>
+        <h1>Login</h1>
+        <input type="texto" placeholder="usuario" name="login" id="usuario">
+        <br><br>
+        <input type="password" placeholder="senha" name="txtsenha" id="senha">
+        <br><br>
+        <button type="submit">Entrar</button>
+        <br><br>
+        <label for="nivel" >Nivel de acesso</label>
+        <br>
+        <select name="nivel" id="valores">
+            <option value="admin">Administrador</option>
+            <option value="func">Funcionário</option>
+        </select>
+       </fieldset>
+        <a href="cadastrarusuarios.html" id="cadastre_se">Cadastre-se</a>
+        </form>
+    </div>
+   
+</body>
+</html>
